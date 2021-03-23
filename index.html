@@ -10,5 +10,12 @@ title: Home
     {%include navigation.html%}
 </div>
 <div class="container">
-    mainContent
+    {%for post in site.posts%}
+        <div class="post">
+            <div class="date">{{post.date | date:"%y/%m/%d"}}</div>
+            <img class="postImg" src="/assets/images/background.jpg" alt="">
+            <a href="{{post.url}}" class="postTitle">{{post.title}}</a>
+        </div>
+    {%endfor%}
+    <li></li>
 </div>

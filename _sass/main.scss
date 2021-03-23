@@ -53,3 +53,40 @@ a{
         }
     }
 }
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 50px;
+    justify-content: center;
+    // border: 1px solid black;
+    .post{
+        width: 300px;
+        height: 350px;
+        margin: 30px 50px;
+        display: flex;
+        flex-direction: column;
+
+        .date{
+            justify-self: flex-end;
+            align-self: flex-end;
+            font-size: 14px;
+            margin-right: 3px;
+        }
+        .postImg{
+            width: 300px;
+            height: 280px;
+        }
+        .postTitle{
+            font-size: 16px;
+            margin-left: 3px;
+            margin-right: 3px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+    }
+}

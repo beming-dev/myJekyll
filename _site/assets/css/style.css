@@ -18,4 +18,14 @@ a { text-decoration: none; color: black; }
 
 .header .nav a { margin-left: 5px; }
 
+.container { width: 100%; display: flex; flex-flow: wrap; margin-top: 50px; justify-content: center; }
+
+.container .post { width: 300px; height: 350px; margin: 30px 50px; display: flex; flex-direction: column; }
+
+.container .post .date { justify-self: flex-end; align-self: flex-end; font-size: 14px; margin-right: 3px; }
+
+.container .post .postImg { width: 300px; height: 280px; }
+
+.container .post .postTitle { font-size: 16px; margin-left: 3px; margin-right: 3px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; /* number of lines to show */ -webkit-box-orient: vertical; }
+
 /*# sourceMappingURL=style.css.map */
