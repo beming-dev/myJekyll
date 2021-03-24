@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블로그 개발 일지</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class=main>
-        <div class="header">
-            <div class="logo">
-                <img src="/assets/images/background.jpg" alt="defaultImg" class="logoImg">
-                <h2 class="logoName"><a href="/">beming-dev</a></h2>
-            </div>
-            <nav class="nav">
-    
-    <a href="/" class="Home">Home</a>
-    
-    <a href="/about.html" class="About">About</a>
-    
-</nav>
-        </div>
-
-        <div class="postBox">
-    <h1 class="title">블로그 개발 일지</h1>
-    <p class="date">24 Mar 2021 - </p>
-    <h1 id="-블로그-개발-시작">-블로그 개발 시작</h1>
+I"�<h1 id="-블로그-개발-시작">-블로그 개발 시작</h1>
 
 <p>최근 들어 블로그를 만들어야겠다는 생각이 들었다. 내가 코딩하는 것들이나 코딩을 하면서 생기는 문제들을 기록하고 싶었기 때문이다.</p>
 
@@ -126,10 +96,4 @@ hello world
 
 <p>이것들 외에도 아마 할게 훨씬 많을 것이다. 그래도 이제는 내가 하는 것들을 이곳에 기록할 수는 있으니 앞으로 천천히 글도 쓰고 블로그도 업데이트하고 그래야겠다.</p>
 
-
-</div>
-    </div>
-    <div class="footer">
-    </div>
-</body>
-</html>
+:ET
