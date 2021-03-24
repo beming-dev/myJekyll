@@ -20,11 +20,16 @@ a{
 }
 
 .main{
-    margin: 0 auto;
-    width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
+    width: 100%;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +64,7 @@ a{
 
 .container{
     width: 100%;
+    max-width: 800px;
     min-height: 200px;
     display: flex;
     flex-flow: wrap;
@@ -68,7 +74,7 @@ a{
     .post{
         width: 300px;
         height: 360px;
-        margin: 30px 50px;
+        margin: 30px 40px;
         display: flex;
         flex-direction: column;
         padding: 10px;
