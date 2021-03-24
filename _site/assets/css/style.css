@@ -34,7 +34,7 @@ a { text-decoration: none; color: black; }
 
 @media (max-width: 1400px) { li { list-style: none; } .categoryBox { width: 100%; position: relative; display: flex; justify-content: center; flex-flow: wrap; top: 0; left: 0; padding: 0; } .categoryBox .categoryItem { margin-left: 10px; margin-right: 10px; } }
 
-.postBox .title { text-align: center; font-size: 50px; color: grey; }
+.postBox .title { text-align: center; font-size: 50px; margin-top: 70px; }
 
 .postBox .date { text-align: end; padding-bottom: 20px; border-bottom: 1px solid #dddddd; }
 
