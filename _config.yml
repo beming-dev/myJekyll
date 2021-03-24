@@ -2,3 +2,4 @@ encoding: UTF-8
 
 collections:
   categories:
+    output: true

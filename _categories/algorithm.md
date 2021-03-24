@@ -1,3 +1,5 @@
 ---
-name: algorithm
+layout: category
+title: algorithm
 ---
+

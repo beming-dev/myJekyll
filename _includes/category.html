@@ -1,7 +1,7 @@
 <ul class="categoryBox">
     {%for category in site.categories%}
         <li class="categoryItem">
-            {{category.name}}
+            <a href="{{category.url}}">{{category.title}} ({{category | last | size}})</a>
         </li>
     {%endfor%}    
 </ul>
