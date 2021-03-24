@@ -1,4 +1,4 @@
-I"�<h1 id="-블로그-개발-시작">-블로그 개발 시작</h1>
+I"�<h1 id="-블로그-개발-시작">-블로그 개발 시작</h1>
 
 <p>최근 들어 블로그를 만들어야겠다는 생각이 들었다. 내가 코딩하는 것들이나 코딩을 하면서 생기는 문제들을 기록하고 싶었기 때문이다.</p>
 
@@ -20,7 +20,7 @@
 
 <h3 id="jekyll-사이트-구조">Jekyll 사이트 구조</h3>
 
-<p><img src="/assets/images/Jekyll" alt="Jekyll 구조" style="zoom:50%;" /></p>
+<p><img src="/assets/images/Jekyll.jpg" alt="Jekyll 구조" style="zoom:50%;" /></p>
 
 <ul>
   <li>
