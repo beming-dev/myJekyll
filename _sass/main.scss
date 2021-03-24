@@ -99,6 +99,18 @@ a{
     background: #666666;
     margin-top: 250px;
     border-top: 1px solid #B2B2B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    span{
+        color: white;
+        font-size: 14px;
+    }
 }
 
 .categoryBox{
