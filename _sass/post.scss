@@ -2,16 +2,19 @@
     width: 100%;
     max-width: 800px;
     padding: 0px 10px;
-}
 
-.postBox .title{
-    text-align: center;
-    font-size: 50px;
-    margin-top: 70px;
-}
-
-.postBox .date{
-    text-align: end;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #dddddd;
+    .title{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    .date{
+        text-align: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dddddd;
+    }
+    .postImg{
+        width: 100%;
+        max-width: 800px;
+    }
 }
