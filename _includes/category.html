@@ -1,12 +1,9 @@
 <ul class="categoryBox">
-    <li class="categoryItem">
-        <a href="/">fd</a>
-    </li>
     {%for category in site.categories%}
         {%for categoryName in category[0]%}
             {%if categoryName != null%}
                 <li class="categoryItem">
-                    <a href="{{category.url}}">{{categoryName}} {{category[1].size}}({{category | last | size}})</a>
+                    <a href="/categories/{{categoryName}}">{{categoryName}} {{category[1].size}}({{category | last | size}})</a>
                 </li>
             {%endif%}
         {%endfor%}
