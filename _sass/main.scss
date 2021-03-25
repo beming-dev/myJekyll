@@ -28,7 +28,8 @@ a{
 }
 
 .header{
-    width: 90%;
+    // width: 90%;
+    width: 100%;
     max-width: 800px;
     display: flex;
     justify-content: space-between;
@@ -151,10 +152,8 @@ a{
     }
 }
 
-@media(max-width:500px){
-    .logoImg{
-        display: none;
-    }
-    .logoName{
-    }   
-}   
+// @media(max-width:500px){
+//     .logoImg{
+//         display: none;
+//     }
+// }   
