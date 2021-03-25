@@ -46,12 +46,12 @@ Jekyll 테마를 만들기 위해 Jekyll 위의 공식문서를 따라 만들기
 
 - _layouts:  말 그대로 레이아웃이다. 블로그의 기본적인 레이아웃 구조를 만들어놓고, 내용이 바뀌어야 하는 곳에는 {%raw%}{{ content }}{%endraw%} 라는 liquid문법을 놓아둔다. 다른 파일에서 이 layout을 사용하기 위해서는
 
-  ```html
+  <pre><code class="html">
   ---
   layout: 레이아웃 이름
   ---
   hello world
-  ```
+  </code></pre>
 
   와 같이 작성해주면 레이아웃 이름에 맞는 layout 파일이 적용되고, 머릿말 아래에 있는 부분이 layout 파일의 {%raw%}{{ content }}{%endraw%} 부분에 들어간다.
 
