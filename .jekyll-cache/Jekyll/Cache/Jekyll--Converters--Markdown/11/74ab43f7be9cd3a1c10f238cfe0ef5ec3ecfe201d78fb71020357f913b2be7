@@ -1,0 +1,120 @@
+I"<p>오늘부터 블로그를 조금씩 수정하고 기능을 추가하고 있다. 모바일에서 볼때 이상하지 않도록 css를 수정하고, 댓글 기능도 추가했다. 그리고 categorizing하는 방식도 바꿔서 이젠 카테고리에 맞는 글의 개수도 표시할 수 있게 됐다.</p>
+
+<h1 id="collection을-사용한-categorizing">collection을 사용한 categorizing</h1>
+
+<p>원래 나는 Jekyll의 collection 기능을 이용해 categorizing을 했었다. collection을 간단히 설명하자면, 루트 디렉토리에  “_<em>collection_name</em> “ 폴터를 만들고, 그 아래에 마크다운 파일을 만들면, 프로젝트 내에서 site.<em>collction_name</em>으로 접근할 수 있게 해주는 기능이다. 이 과정에서 _config.yml 파일에</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>collections:
+  collection_name:
+</code></pre></div></div>
+
+<p>위 내용을 추가해주어야 한다.  그러나 이 방법으로 categorizing을 하면 {{category | last | size}}를 사용해서 글의 개수를 표시할 수가 없었다.  다른 사람들은 나랑 코드도 비슷한데 다 되던데 왜 나만 안되지? 라는 생각으로 구글링 해본 결과 충격적인 사실을 알게됐다…</p>
+
+<p>바로 categories collection을 만들지 않고 그냥 site.categories변수에 접근하면 Jekyll이 알아서 머리말에 있는 category, categories 변수를 모아주는 것이었다. 이렇게 좋은 방법이 있었다니ㅠㅠ</p>
+
+<p>아무튼 이제 {{category | last | size}} 를 통해서 카테고리에 속한 글의 개수도 세는 것이 가능해졌다! 현재 categorizing하는 방식을 간단히 정리해봤다.</p>
+
+<ol>
+  <li>
+    <p>post 머리말에 category 변수 추가</p>
+
+    <p>ex) _posts/2021-03-24-Jekyll블로그 개발 일지.md</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+category: about블로그
+thumbnail: Blog.png
+---
+post내용
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>categories 폴더에 사용할 카테고리 추가 후 category에 적용할 레이아웃 설정</p>
+
+    <p>ex) categories/about블로그.md</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: category
+title: 개발일지
+---
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>category layout에서 site.categories사용</p>
+
+    <p>ex)_layouts/category.html</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+---
+&lt;%raw%
+   
+       
+           
+            &lt;li class="categoryItem"&gt;
+                &lt;a href="/categories/algorithm"&gt;algorithm (1)&lt;/a&gt;
+            &lt;/li&gt;
+           
+   	
+   
+       
+           
+            &lt;li class="categoryItem"&gt;
+                &lt;a href="/categories/about블로그"&gt;about블로그 (2)&lt;/a&gt;
+            &lt;/li&gt;
+           
+   	
+   
+   
+&lt;div class="container"&gt;
+       
+&lt;/div&gt;
+&lt;%endraw%&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>이런 식으로 작성하면 /categories/카테고리명 으로 접속하면 카테고리이름.md파일이 불러지고 카테고리이름.md파일에서 category layout을 불러서 코드가 실행돼서 카테고리가 분리된 페이지가 만들어진다.</p>
+
+<p>처음 파일을 수정했을때 카테고리 목록이 뜨지 않아서 당황했었는데, _config.yml파일을 수정한 후 Jekyll을 재시작하지 않아서 생긴 문제였다. local에서 테스트할 때는 config파일을 수정하면 꼭 재시작 해주자.</p>
+
+<h1 id="css수정">CSS수정</h1>
+
+<p>처음 블로그를 만들었을 때 display: flex를 설정했는데도 화면 크기를 줄였을 때 요소가 줄어들지 않고 가로 스크롤이 생기는 현상이 있었다. 이는 width:800px 이런식으로 고정 width를 줬기 때문이었다. 그래서 width:100%; max-width:800px; 을 사용하니 해결됐다.</p>
+
+<p>위 문제를 해결한 후, 블로그를 모바일로 접속해봤는데 글이 핸드폰 화면 양 끝에 너무 딱 붙어있고, header부분도 요소가 많아 너무 너저분했다. 그리고 가로축으로 살짝 스크롤이 생기는 버그도 있었다.</p>
+
+<div style="display:flex; justify-content:space-evenly; align-items:center; background:grey">
+    <img src="/assets/images/2021-03-25-블로그 업데이트/1" alt="KakaoTalk_20210325_154200702" style="zoom:25%;" />(전)
+    <img src="/assets/images/2021-03-25-블로그 업데이트/2" alt="KakaoTalk_20210325_154200702" style="zoom:25%;" />(후)
+</div>
+
+<p>그래서 media query로 화면이 작아졌을 때 logoImg를 없앴고, header부분과 container에 들어가는 내용들의 width를 90%로 바꿔줬더니 약간 스크롤이 생기는 버그도 고쳐졌다.</p>
+
+<h1 id="댓글-기능-추가">댓글 기능 추가</h1>
+
+<p>댓글 기능을 추가하기 위해 검색해봤는데, 전부 disqus라는 플러그인에 대한 글만 나왔다. 좀 더 심플한 디자인을 원했지만 엄청 간단하게 댓글 기능을 추가할 수 있어서 그냥 사용하기로 했다.</p>
+
+<p>사용하는 법은 그냥</p>
+
+<p><a href="https://blog.disqus.com/">https://blog.disqus.com/</a></p>
+
+<p>disqus에 가입한 후 순서대로 GET STARTED, I want to install Disqus on my site, Basic, Jekyll을 선택한다.</p>
+
+<p><img src="/assets/images/2021-03-25-블로그 업데이트/3" alt="화면 캡처 2021-03-25 154642" style="zoom:50%;" /></p>
+
+<p>그 다음 나오는 이 화면에서 Universal Embeded Code를 클릭하면 긴 코드 하나와 한줄따리 코드가 하나 나오는데, 짧은 코드는 javascript를 적용시킬 파일의  body태그가 끝나는 부분(<code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code>)앞에 붙여 넣어주고,  긴 코드는 댓글을 띄우고 싶은 부분에 붙여넣어주면 된다.</p>
+
+<p>처음 추가했을 때 화면에 긴 줄만 뜨고 댓글 창이 표시가 안됐는데, 이는 댓글에 적용되는 css파일로 가서</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#disqus_thread</span><span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>위와같이 width 속성을 적용해서 해결했다.</p>
+
+<h1 id="마무리">마무리</h1>
+
+<p>이제 누구한테 보여줘도 부끄럽지는 않을 정도로 블로그가 완성된것 같다. 물론 기능을 추가하려면 끝없이 추가할 수 있겠지만 그런것들은 필요할 때 하나씩 만들어가려고 한다. 이제 라즈베리파이로 서버돌리는거 공부해야지~</p>
+:ET
