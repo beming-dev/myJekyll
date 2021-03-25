@@ -3,7 +3,7 @@
         {%for categoryName in category[0]%}
             {%if categoryName != null%}
                 <li class="categoryItem">
-                    <a href="/categories/{{categoryName}}">{{categoryName}} {{category[1].size}}({{category | last | size}})</a>
+                    <a href="/categories/{{categoryName}}">{{category[1].size}}({{category | last | size}})</a>
                 </li>
             {%endif%}
         {%endfor%}
