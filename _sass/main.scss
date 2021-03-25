@@ -87,8 +87,8 @@ a{
         .postImg{
             width: 300px;
             height: 280px;
-            border-top: 1px solid grey;
-            border-bottom: 1px solid grey;
+            border-top: 1px solid skyblue;
+            border-bottom: 1px solid skyblue;
         }
         .postTitle{
             font-size: 18px;
@@ -97,6 +97,7 @@ a{
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
+            font-weight: bold;
             -webkit-line-clamp: 2; /* number of lines to show */
             -webkit-box-orient: vertical;
         }
