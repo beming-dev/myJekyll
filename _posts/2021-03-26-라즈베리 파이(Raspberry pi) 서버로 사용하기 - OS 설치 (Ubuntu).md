@@ -8,7 +8,7 @@ thumbnail: Blog.png
 
 이번에 Node.js, Express를 공부하면서 커뮤니티를 하나 만들게 됐다. 대충 아래 사진처럼 생겼다.(디자인은 하나도 신경쓰지 않았다ㅎㅎ..) 그냥 서버 공부 할 겸 Mysql, session을 사용해서 CRUD기능, 로그인 기능을 구현해놓기만 했다. 
 
-<img src="/essets/images/{{page.title}}/1.png" alt="내 커뮤니티"/>
+<img src="/assets/images/{{page.title}}/1.png" alt="내 커뮤니티"/>
 
 이제 어느 정도 커뮤니티로 쓸 수 있을 정도가 된 것 같아서 외부에서도 접속할 수 있게 하고 싶었다. 사실 그냥 호스팅 업체를 쓰는 것도 나쁘지 않지만 공부 목적이기 때문에 라즈베리 파이로 서버 돌리는 것도 공부해보자! 해서 라즈베리 파이를 사게 되었다.
 
@@ -32,7 +32,7 @@ thumbnail: Blog.png
 - sd카드 리더기
 
 아래는 케이스를 다 조립한 후 사진이다.
-<img src="/essets/images/{{page.title}}/2.jpg" alt="조립사진"/>
+<img src="/assets/images/{{page.title}}/2.jpg" alt="조립사진"/>
 
 사용할 수 있는 모니터가 있다면 mini hdmi 케이블을 사서 연결해서 쓰는 것이 좋다. 나는 처음 구매할 때 모니터가 필요할 거라는 생각을 못하고 안샀다... 그래서 ssh라는 원격 제어를 할 수 있게 해주는 프로토콜을 사용하기로 했다.
 
@@ -49,7 +49,7 @@ thumbnail: Blog.png
 
 둘다 설치한 후 etcher를 들어가면 아래와 같은 모습이 나올텐데, 차례대로 이미지 파일을 선택하고, sd카드를 선택한 후 Flash를 누르면 쉽고 빠르게 이미지가 구워진다. 
 
-<img src="/essets/images/{{page.title}}/3.png" alt="조립사진"/>
+<img src="/assets/images/{{page.title}}/3.png" alt="조립사진"/>
 
 완료된 후 내pc에 들어갔을 때, System-boot가 생기면 성공이다. 혹시 드라이브를 포맷하라는 문구가 뜨면 포맷하지 말고 취소하면 된다.
 
