@@ -9,6 +9,14 @@ layout: default
     {{content}}
 </div>
 
+<div class="tags">
+    {%if page.tags%}
+        {%for tag in page.tags%}
+            <span class="tag">{{tag}}</span>
+        {%endfor%}
+    {%endif%}
+</div>
+
 <div id="disqus_thread"></div>
 <script>
     /**
