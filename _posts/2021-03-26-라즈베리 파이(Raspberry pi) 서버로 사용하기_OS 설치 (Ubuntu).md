@@ -32,7 +32,7 @@ thumbnail: 라즈베리파이.png
 - sd카드 리더기
 
 아래는 케이스를 다 조립한 후 사진이다.
-<img src="/assets/images/2021-03-26-라즈베리 파이(Raspberry pi) 서버로 사용하기_OS 설치 (Ubuntu)/2.jpg" alt="조립사진"/>
+<img src="/assets/images/라즈베리 파이(raspberry pi) 서버로 사용하기_os 설치 (ubuntu)/2.jpg" alt="조립사진"/>
 
 사용할 수 있는 모니터가 있다면 mini hdmi 케이블을 사서 연결해서 쓰는 것이 좋다. 나는 처음 구매할 때 모니터가 필요할 거라는 생각을 못하고 안샀다... 그래서 ssh라는 원격 제어를 할 수 있게 해주는 프로토콜을 사용하기로 했다.
 
