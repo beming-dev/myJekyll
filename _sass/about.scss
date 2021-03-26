@@ -5,7 +5,7 @@
 
 .about{
     width: 90%;
-    max-width: 800px;
+    max-width: var(--default-width);
 
     a{
         text-decoration: underline;

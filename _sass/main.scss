@@ -29,7 +29,7 @@ a{
 
 .header{
     width: 90%;
-    max-width: 800px;
+    max-width: var(--default-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +63,7 @@ a{
 
 .container{
     width: 100%;
-    max-width: 800px;
+    max-width: var(--default-width);
     min-height: 200px;
     display: flex;
     flex-flow: wrap;

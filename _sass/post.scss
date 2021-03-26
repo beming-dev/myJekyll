@@ -1,6 +1,6 @@
 .postBox{
     width: 90%;
-    max-width: 800px;
+    max-width: var(--default-width);
     // padding: 0px 10px;
 
     a{
@@ -8,7 +8,7 @@
     }
     img{
         width: 80%;
-        max-width: 800px;
+        max-width: var(--default-width);
     }
     .title{
         text-align: center;
@@ -28,13 +28,13 @@
 
 .tags{
     width: 90%;
-    max-width: 800px;
+    max-width: var(--default-width);
     margin-top: 50px;
 
     .tagText{
         font-size: 20px;
         width: 100%;
-        max-width: 800px;
+        max-width: var(--default-width);
         border-bottom: 1px solid grey;
         font-weight: bold;
         padding-bottom: 2px;
@@ -47,6 +47,6 @@
 
 #disqus_thread{
     width: 90%;
-    max-width: 800px;
+    max-width: var(--default-width);
     margin-top: 200px;
 }
