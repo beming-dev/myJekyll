@@ -3,7 +3,6 @@ layout: post
 category: 라즈베리파이
 thumbnail: 라즈베리파이.png
 ---
-{{page.title}}
 
 # 왜 라즈베리 파이 서버를 쓰나
 
