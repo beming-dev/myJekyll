@@ -10,9 +10,10 @@ layout: default
 </div>
 
 <div class="tags">
+    <div class="tagText">tags</div>
     {%if page.tags%}
         {%for tag in page.tags%}
-            <span class="tag">{{tag}}</span>
+            <span class="tag">#{{tag}}&nbsp;&nbsp;</span>
         {%endfor%}
     {%endif%}
 </div>

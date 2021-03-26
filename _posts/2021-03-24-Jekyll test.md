@@ -2,6 +2,7 @@
 layout: post
 category: algorithm
 thumbnail: Blog.png
+tags: [jekyll, raspberry pi]
 ---
 
 # -블로그 개발 시작
