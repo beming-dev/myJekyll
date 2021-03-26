@@ -1,67 +1,68 @@
-.postBox{
-    width: 90%;
-    max-width: var(--default-width);
-    // padding: 0px 10px;
+.postBox {
+  width: 90%;
+  max-width: var(--default-width);
+  // padding: 0px 10px;
 
-    a{
-        color: skyblue;
-    }
-    img{
-        width: 80%;
-        max-width: var(--default-width);
-    }
-    .title{
-        text-align: center;
-        font-size: 50px;
-        margin-top: 70px;
-    }
-    .date{
-        text-align: end;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #dddddd;
-    }
-    .postImg{
-        width: 100%;
-        max-width: 750px;
-    }
+  a {
+    color: skyblue;
+  }
+  img {
+    width: 80%;
+    max-width: var(--default-width);
+  }
+  .title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+  }
+  .date {
+    text-align: end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .postImg {
+    width: 100%;
+    max-width: 750px;
+  }
 }
 
-.tags{
-    width: 90%;
-    max-width: var(--default-width);
-    margin-top: 50px;
+.tags {
+  width: 90%;
+  max-width: var(--default-width);
+  margin-top: 50px;
 
-    .tagText{
-        font-size: 20px;
-        width: 100%;
-        max-width: var(--default-width);
-        border-bottom: 1px solid grey;
-        font-weight: bold;
-        padding-bottom: 2px;
-    }
-    .tag{
-        color: grey;
-        font-weight: bold;
-    }
+  .tagText {
+    font-size: 20px;
+    width: 100%;
+    max-width: var(--default-width);
+    border-bottom: 1px solid grey;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+  .tag {
+    color: grey;
+    font-weight: bold;
+  }
 }
 
-.postChanger{
-    margin-top: 50px;
-    display: flex;
-    width: 90%;
-    max-width: var(--default-width);
-    .prev{
-        justify-self: flex-end;
-        align-self: flex-start;
-    }
-    .next{
-        justify-self: flex-start;
-        align-self: flex-end;
-    }
+.postChanger {
+  margin-top: 50px;
+  display: flex;
+  width: 90%;
+  max-width: var(--default-width);
+
+  .prev {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .next {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
 }
 
-#disqus_thread{
-    width: 90%;
-    max-width: var(--default-width);
-    margin-top: 200px;
+#disqus_thread {
+  width: 90%;
+  max-width: var(--default-width);
+  margin-top: 200px;
 }
