@@ -26,6 +26,17 @@
     }
 }
 
+.tags{
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: bisque;
+
+    .tag{
+        border:1px solid black;
+        border-radius: 5px;
+    }
+}
+
 #disqus_thread{
     width: 90%;
     max-width: 800px;
