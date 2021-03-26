@@ -45,6 +45,20 @@
     }
 }
 
+.postChanger{
+    display: flex;
+    width: 90%;
+    max-width: var(--default-width);
+    .prev{
+        justify-self: flex-end;
+        align-self: flex-start;
+    }
+    .next{
+        justify-self: flex-start;
+        align-self: flex-end;
+    }
+}
+
 #disqus_thread{
     width: 90%;
     max-width: var(--default-width);
