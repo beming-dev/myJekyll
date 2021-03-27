@@ -5,11 +5,16 @@ title: Home
 
 {%include category.html%}
 <div class="container">
-    {%for post in site.posts%}
-        <div class="post">
-            <div class="date">{{post.date | date:"%y/%m/%d"}}</div>
-            <a href="{{post.url}}"><img class="postImg" src="/assets/images/{{post.thumbnail}}" alt=""></a>
-            <a href="{{post.url}}" class="postTitle">{{post.title}}</a>
-        </div>
-    {%endfor%}
+  {%for post in site.posts%}
+  <div class="post">
+    <div class="date">{{post.date | date:"%y/%m/%d"}}</div>
+    <a href="{{post.url}}"
+      ><img
+        class="postImg"
+        src="/assets/images/thumbnails/{{post.thumbnail}}"
+        alt=""
+    /></a>
+    <a href="{{post.url}}" class="postTitle">{{post.title}}</a>
+  </div>
+  {%endfor%}
 </div>
