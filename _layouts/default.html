@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Noto+Sans+KR:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/default.min.css"
+    />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-</head>
-<body>
-    <div class=main>
-        <div class="header">
-            <div class="logo">
-                <a href="/"><img src="/assets/images/BlogLogo.png" alt="defaultImg" class="logoImg"></a>
-                <div class="logoName"><a href="/">beming-dev</a></div>
-            </div>
-            {%include navigation.html%}
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <a href="/"
+            ><img
+              src="/assets/images/BlogLogo.png"
+              alt="defaultImg"
+              class="logoImg"
+          /></a>
+          <div class="logoName"><a href="/">beming-dev</a></div>
         </div>
-
-        {{content}}
+        {%include navigation.html%}
+      </div>
+      <div style="display: none">민관 블로그</div>
+      {{content}}
     </div>
     <div class="footer">
-            <a href="https://github.com/beming-dev"><img src="/assets/images/githubLogo.png" alt=""></a>
-            <span>© copyright: beming-dev</span>
+      <a href="https://github.com/beming-dev"
+        ><img src="/assets/images/githubLogo.png" alt=""
+      /></a>
+      <span>© copyright: beming-dev</span>
     </div>
 
-    <script id="dsq-count-scr" src="//beming-dev.disqus.com/count.js" async></script>
-</body>
+    <script
+      id="dsq-count-scr"
+      src="//beming-dev.disqus.com/count.js"
+      async
+    ></script>
+  </body>
 </html>
