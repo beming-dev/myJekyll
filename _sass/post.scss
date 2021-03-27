@@ -48,16 +48,15 @@
 .postChanger {
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
   width: 90%;
   max-width: var(--default-width);
 
   .prev {
-    justify-self: flex-start;
-    align-self: flex-start;
+    margin-right: 10px;
   }
   .next {
-    justify-self: flex-end;
-    align-self: flex-end;
+    margin-left: 10px;
   }
 }
 
