@@ -1,11 +1,11 @@
-html{
-  font-size: 1.2rem;
-}
-
 .postBox {
   width: 90%;
   max-width: var(--default-width);
   // padding: 0px 10px;
+
+  p{
+    font-size: 1.2rem;
+  }
 
   a {
     color: skyblue;
