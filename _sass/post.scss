@@ -3,7 +3,7 @@
   max-width: var(--default-width);
   // padding: 0px 10px;
 
-  p{
+  p {
     font-size: 1.2rem;
   }
 
@@ -61,5 +61,11 @@
   }
   .next {
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 1rem;
   }
 }
