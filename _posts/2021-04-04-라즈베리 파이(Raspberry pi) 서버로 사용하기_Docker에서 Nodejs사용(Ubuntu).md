@@ -45,7 +45,7 @@ Docker는 Linux위에서 프로세스들을 컨테이너에 배치시켜주는 �
 
    docker run hello-world를 했을때, hello-world 이미지가 다운로드 되고 아래와 같이 나오면 성공이다.
 
-   <img src="\assets\images\화면 캡처 2021-04-04 200644.png">
+   <img src="\assets\images\화면 캡처 2021-04-04 200644.png"/>
 
 4. 다음으로 nodejs와 npm을 설치해야 한다.
 
@@ -171,7 +171,7 @@ Docker는 Linux위에서 프로세스들을 컨테이너에 배치시켜주는 �
 
 별 짓을 다해도 안되던 중 Stack overflow에서 한 글의 엄청 밑에 추천 0개짜리 답글에 나랑 똑같은 상황인 사람이 있었다.
 
-<img src="\assets\images\화면 캡처 2021-04-04 114317.png">
+<img src="\assets\images\화면 캡처 2021-04-04 114317.png"/>
 
 .. 난 주말동안 무얼 한 것이지..... 그냥 점을 뺐더니 됐다.
 
