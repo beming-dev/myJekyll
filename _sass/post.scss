@@ -65,10 +65,11 @@
 }
 
 @media (max-width: 500px) {
-  p {
-    font-size: 0.9rem;
-  }
   .postBox {
+    p {
+      font-size: 0.9rem;
+    }
+
     .title {
       font-size: 35px;
     }
