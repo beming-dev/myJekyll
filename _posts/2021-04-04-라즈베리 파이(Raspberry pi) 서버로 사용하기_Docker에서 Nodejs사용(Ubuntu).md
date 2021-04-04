@@ -2,8 +2,6 @@
 layout: post
 category: 라즈베리파이
 thumbnail: 라즈베리파이.png
-typora-copy-images-to: github blog\beming-dev.github.io\assets\images
-typora-root-url: github blog\beming-dev.github.io
 ---
 
 지난 시간에 라즈베리 파이에 Ubuntu server를 OS로 설치했다. 이제 이 위에다 NodeJS, NPM을 설치해서 서버로 사용해도 되지만, 이 위에다 Docker를 설치해서 사용해보기로 했다.
