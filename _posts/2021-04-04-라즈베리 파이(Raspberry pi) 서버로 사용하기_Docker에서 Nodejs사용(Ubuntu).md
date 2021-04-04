@@ -123,7 +123,7 @@ Docker는 Linux위에서 프로세스들을 컨테이너에 배치시켜주는 �
 
     이렇게 입력해준다.
 
-11. 추가로 .dockerfile을 만들고
+11. 추가로 .dockerignore을 만들고
 
     ```
     node_modules npm-debug.log
