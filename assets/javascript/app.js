@@ -16,7 +16,7 @@ class App {
   resize() {
     this.header = document.querySelector(".header");
     this.canvas.width = this.header.clientWidth;
-    this.canvas.height = this.header.clientHeight+100;
+    this.canvas.height = this.header.clientHeight;
     this.stageWidth = this.canvas.width;
     this.stageHeight = this.canvas.height;
 
