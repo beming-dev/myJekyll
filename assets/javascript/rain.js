@@ -20,7 +20,7 @@ export class Rain {
   }
 
   animate(ctx) {
-    this.startY += 2;
+    this.startY += 6;
     if (this.startY > this.stageHeight) {
       this.startX = Math.random() * this.stageWidth;
       this.startY = (Math.random() * this.stageHeight) / 10;
