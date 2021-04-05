@@ -6,6 +6,7 @@ class App {
     this.ctx = this.canvas.getContext("2d");
 
     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
+    console.log(window.devicePixelRatio);
 
     window.addEventListener("resize", this.resize.bind(this), false);
     this.resize();
