@@ -20,7 +20,7 @@ class App {
     this.stageWidth = this.canvas.width;
     this.stageHeight = this.canvas.height;
 
-    this.ctx.scale(this.pixelRatio, this.pixelRatio);
+    this.ctx.scale(2, 2);
 
     this.totalRain = (this.stageWidth / 80) * (this.stageHeight / 80) * 5;
     this.rains = [];
