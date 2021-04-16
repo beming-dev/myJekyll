@@ -1,4 +1,8 @@
 ---
+layout: post
+category: 라즈베리파이
+thumbnail: 라즈베리파이.png
+tags: [Raspberry pi, Ubuntu server, scp, dhcp, port forwarding]
 typora-copy-images-to: assets\images
 typora-root-url: ./
 ---
