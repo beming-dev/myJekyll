@@ -1,7 +1,7 @@
 ---
 layout: post
 category: React+NodesJS
-thumbnail: reactNOde.jpg
+thumbnail: reactNodeJS.jpg
 tags: [Ract, NodeJS]
 typora-copy-images-to: assets\images
 typora-root-url: ./
