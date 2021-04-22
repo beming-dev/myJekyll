@@ -1,4 +1,4 @@
 ---
 layout: category
-title: React+NodeJS
+title: 개발일지
 ---
